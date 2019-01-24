@@ -596,6 +596,22 @@ class BitcoinNolnet(BitcoinCash):
     TX_PER_BLOCK = 50
     RPC_PORT = 28332
     PEER_DEFAULT_PORTS = {'t': '52001', 's': '52002'}
+	
+	
+class Australiacash(Coin):
+    NAME = "AustraliaCash"
+    SHORTNAME = "AUS"
+    NET = "mainnet"
+    GENESIS_HASH = ('aa43989047f144331fc6400859c691b1'
+                    '1c0e111ead1977511d340860c1c5ad1f')
+    TX_COUNT = 39670
+    TX_COUNT_HEIGHT = 38148
+    TX_PER_BLOCK = 0.006825869039911462
+    RPC_PORT = 1987
+    REORG_LIMIT = 800
+    PEERS = [
+        '161.43.255.201 s5003 t5004 ',
+    ]
 
 
 class Litecoin(Coin):
